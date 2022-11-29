@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <body>
+        {{n}} 
+        <hr>
+        {% for Account in n %}
+        <tr>
+            <td>
+                <b>ID:</b></b><p>{{Account.id}}</p>
+            </td>
+            
+            <td>
+                <p>This is email: {{Account.email}}</p>
+              
+            </td>
+            <td>
+                <p>This is password: {{Account.password}}</p>
+            </td>
+            <td>
+                <p>This is firstName: {{Account.first_name}}</p>
+            </td>
+            <td>
+                <p>This is last name: {{Account.last_name}}</p>
+            </td>
+            <td>
+                <p>This is the username: {{Account.username}}</p>
+            </td>
+            <br>
+            <br>
+            <br>
+            <br>
+        </tr>
+        
+        {% endfor %}
+    </body>
+</head>
